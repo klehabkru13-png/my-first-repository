@@ -17,13 +17,13 @@ class MCP3021:
             print(f"Принятые данные: {data}, Старший байт: {upper_data_byte:x}, Младший байт: {lower_data_byte:x}, Число: {number}")
         return number
     def get_voltage(self):
-        get_voltage = self.get_number()*self.dynamic_range/1023 #644
+        get_voltage = self.get_number()*self.dynamic_range/644
         return get_voltage
 
 if __name__ == "__main__":
     mcp = None
     try:
-        mcp = MCP3021(5, True) #3.278
+        mcp = MCP3021(3.278, True)
         
         while True:
             try:

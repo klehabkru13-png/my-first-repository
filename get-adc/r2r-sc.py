@@ -10,7 +10,7 @@ if __name__ == "__main__":
     voltage_values = []
     time_values = []
     sampling_periods = []
-    duration = 30.0
+    duration = 10.0
     start_time = time.time()
         
     try:

@@ -37,8 +37,8 @@ class R2R_ADC:
             if comp == 1:
                 return max(0, value-1)
             value += 1
-        if comp == 0:
-            return 255
+        
+        return 255
     
     def get_sc_voltage(self):
         digital_value = self.sequential_counting_adc()
